@@ -28,7 +28,6 @@ public class Cinema {
                     (backRows * seats * ticketClasses.get(61).get("back"));
         }
 
-
         System.out.printf("Total income: $%d%n", profit);
     }
 
@@ -99,7 +98,6 @@ public class Cinema {
             totalSeats = rows * seats;
 
             cinemaStatus = new String[rows][seats];
-
 
             for (int row = 0; row < rows; row++) {
                 String[] defaultValues = new String[seats];

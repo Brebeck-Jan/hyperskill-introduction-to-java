@@ -57,14 +57,6 @@ public class CoffeeMachine {
         for(CoffeType i: CoffeType.values()) {
             if (i.name().startsWith("STAR")) counter++;run d
         }
-
-//        coffeeMachine.setCurrentRessoures();
-//        coffeeMachine.calculateIngredientRequirements();
-//        coffeeMachine.brewCoffee();
-
-//        1: espresso, latte, and cappuccino
-//        2: replenished by a worker
-//        3: another worker collects the money
     }
 
     private void start() {
@@ -108,32 +100,6 @@ public class CoffeeMachine {
         System.out.printf("$%d of money.%n", currentAmountOfMoney);
     }
 
-//    private void calculateIngredientRequirements() {
-//        System.out.println("Write how many cups of coffee you will need: ");
-//        int neededAmoutOfCoffees = scanner.nextInt();
-//        int possibleAmountOfCoffees = calculatePossibleAmountOfCoffees();
-//
-//        if (possibleAmountOfCoffees >= neededAmoutOfCoffees) {
-//            if (possibleAmountOfCoffees > neededAmoutOfCoffees) {
-//                System.out.printf("Yes, I can make that amount of coffee (and even %d more than that)%n",
-//                        possibleAmountOfCoffees - neededAmoutOfCoffees);
-//            } else {
-//                System.out.println("Yes, I can make that amount of coffee");
-//            }
-//            brewCoffee();
-//        } else {
-//            System.out.printf("No, I can only make %d cup(s) of coffee", possibleAmountOfCoffees);
-//        }
-
-//        int water = this.calculateIngredientRequirement(neededAmoutOfCoffees, WATER_PER_CUP);
-//        int milk = this.calculateIngredientRequirement(neededAmoutOfCoffees, MILK_PER_CUP);
-//        int coffee = this.calculateIngredientRequirement(neededAmoutOfCoffees, COFFEE_PER_CUP);
-//        System.out.printf("For %d cups of coffee you will need:%n", neededAmoutOfCoffees);
-//        System.out.printf("%d ml of water%n", water);
-//        System.out.printf("%d ml of milk%n", milk);
-//        System.out.printf("%d g of coffee beans%n", coffee);
-//    }
-
     private int calculatePossibleAmountOfCoffees(Coffee desiredCoffe) {
         int possibleCupsForWater = desiredCoffe.WATER_PER_CUP > 0 ? currentAmountOfWater / desiredCoffe.WATER_PER_CUP : 1000;
         int possibleCupsForMilk = desiredCoffe.MILK_PER_CUP > 0 ? currentAmountOfMilk / desiredCoffe.MILK_PER_CUP : 1000;
@@ -141,7 +107,6 @@ public class CoffeeMachine {
         int[] possibleAmountsPerIngrident = {possibleCupsForWater, possibleCupsForCoffee, possibleCupsForMilk};
         return Arrays.stream(possibleAmountsPerIngrident).min().getAsInt();
     }
-
 
     private int calculateIngredientRequirement(int amoutOfCoffees, int neededRequirementPerCoffee) {
         return amoutOfCoffees * neededRequirementPerCoffee;
@@ -164,7 +129,6 @@ public class CoffeeMachine {
                 if (currentAmountOfCoffee < desiredCoffee.COFFEE_PER_CUP)
                     System.out.println("Sorry, not enough coffee beans!");
                 if (currentAmountOfMilk < desiredCoffee.MILK_PER_CUP) System.out.println("Sorry, not enough milk!");
-
             }
         }
 
