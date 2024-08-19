@@ -1,0 +1,31 @@
+type: edu
+files:
+  - name: src/battleship/Main.java
+    visible: true
+    learner_created: false
+  - name: test/Tests.java
+    visible: false
+    learner_created: false
+  - name: src/battleship/Game.java
+    visible: true
+    learner_created: true
+  - name: src/battleship/test.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/35305#comment
+status: Failed
+feedback:
+  message: "Wrong answer in test #1\n\nThe ship&#39;s cells were not found at the\
+    \ coordinates &quot;F3 F7&quot;\n\nPlease find below the output of your program\
+    \ during this failed test.\nNote that the &#39;&gt;&#39; character indicates the\
+    \ beginning of the input line.\n\n---\n\n1 2 3 4 5 6 7 8 9 10 \nA ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nEnter\
+    \ the coordinates of the Aircraft carrier (5 cells):\n&gt; F3 F7\n\n  1 2 3 4\
+    \ 5 6 7 8 9 10 \nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ 0 0 0 0 0 ~\
+    \ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nEnter the coordinates of the Battleship (4 cells):"
+  time: "Mon, 19 Aug 2024 07:13:34 UTC"
+record: 2
